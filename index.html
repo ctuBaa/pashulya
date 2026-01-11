@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Коллекция таксидермии</title>
+  <!-- Подключаем Tailwind CSS через CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Дополнительные стили, если нужно */
+    .hover\\:scale-102:hover {
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-amber-50 via-stone-100 to-amber-100 p-8">
+  <div class="max-w-7xl mx-auto">
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h1 class="text-5xl mb-4 text-stone-800">Коллекция таксидермии</h1>
+      <p class="text-xl text-stone-600">Искусство сохранения природной красоты</p>
+      <div class="mt-4 w-32 h-1 bg-amber-600 mx-auto"></div>
+    </div>
+
+    <!-- Collage Grid -->
+    <div class="grid grid-cols-4 auto-rows-[200px] gap-4">
+      <!-- Изображение 1: Deer (row-span-2) -->
+      <div class="row-span-2 overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group relative">
+        <img
+          src="https://images.unsplash.com/photo-1599456671475-da8c5b91e52c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWVyJTIwd2lsZGxpZmV8ZW58MXx8fHwxNzY4MDgwNjI1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          alt="Deer"
+          class="w-full h-full object-cover group-hover:brightness-110 transition-all duration-300"
+          onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23ccc%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2210%22 text-anchor=%22middle%22 fill=%22%23999%22%3EN/A%3C/text%3E%3C/svg%3E';"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+          <span class="text-white text-lg">Deer</span>
+        </div>
+      </div>
+
+      <!-- Изображение 2: Owl -->
+      <div class="overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group relative">
+        <img
+          src="https://images.unsplash.com/photo-1700054723240-032175a02f07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvd2wlMjBiaXJkfGVufDF8fHx8MTc2ODExMzU4MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          alt="Owl"
+          class="w-full h-full object-cover group-hover:brightness-110 transition-all duration-300"
+          onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23ccc%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2210%22 text-anchor=%22middle%22 fill=%22%23999%22%3EN/A%3C/text%3E%3C/svg%3E';"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+          <span class="text-white text-lg">Owl</span>
+        </div>
+      </div>
+
+      <!-- Изображение 3: Fox -->
+      <div class="overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group relative">
+        <img
+          src="https://images.unsplash.com/photo-1715430306822-6961509374e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb3glMjBhbmltYWx8ZW58MXx8fHwxNzY4MTEzNTgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          alt="Fox"
+          class="w-full h-full object-cover group-hover:brightness-110 transition-all duration-300"
+          onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23ccc%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2210%22 text-anchor=%22middle%22 fill=%22%23999%22%3EN/A%3C/text%3E%3C/svg%3E';"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+          <span class="text-white text-lg">Fox</span>
+        </div>
+      </div>
+
+      <!-- Изображение 4: Bear (col-span-2) -->
+      <div class="col-span-2 overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group relative">
+        <img
+          src="https://images.unsplash.com/photo-1661015799592-d9a4c1828b0e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWFyJTIwd2lsZGxpZmV8ZW58MXx8fHwxNzY4MDUwMjc4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          alt="Bear"
+          class="w-full h-full object-cover group-hover:brightness-110 transition-all duration-300"
+          onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23ccc%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2210%22 text-anchor=%22middle%22 fill=%22%23999%22%3EN/A%3C/text%3E%3C/svg%3E';"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+          <span class="text-white text-lg">Bear</span>
+        </div>
+      </div>
+
+      <!-- Изображение 5: Butterfly -->
+      <div class="overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group relative">
+        <img
+          src="https://images.unsplash.com/photo-1660244103972-156fe5854131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXR0ZXJmbHklMjBpbnNlY3R8ZW58MXx8fHwxNzY4MDUwMjgzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          alt="Butterfly"
+          class="w-full h-full object-cover group-hover:brightness-110 transition-all duration-300"
+          onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23ccc%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2210%22 text-anchor=%22middle%22 fill=%22%23999%22%3EN/A%3C/text%3E%3C/svg%3E';"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+          <span class="text-white text-lg">Butterfly</span>
+        </div>
+      </div>
+
+      <!-- Изображение 6: Eagle (row-span-2) -->
+      <div class="row-span-2 overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group relative">
+        <img
+          src="https://images.unsplash.com/photo-1637783038690-e4349f6981d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlYWdsZSUyMGJpcmR8ZW58MXx8fHwxNzY4MDUwMjc5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          alt="Eagle"
+          class="w-full h-full object-cover group-hover:brightness-110 transition-all duration-300"
+          onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23ccc%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2210%22 text-anchor=%22middle%22 fill=%22%23999%22%3EN/A%3C/text%3E%3C/svg%3E';"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+          <span class="text-white text-lg">Eagle</span>
+        </div>
+      </div>
+
+      <!-- Изображение 7: Rabbit -->
+      <div class="overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group relative">
+        <img
+          src="https://images.unsplash.com/photo-1552757166-a0d5c202e7cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyYWJiaXQlMjBhbmltYWx8ZW58MXx8fHwxNzY4MTEzNTgxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          alt="Rabbit"
+          class="w-full h-full object-cover group-hover:brightness-110 transition-all duration-300"
+          onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23ccc%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2210%22 text-anchor=%22middle%22 fill=%22%23999%22%3EN/A%3C/text%3E%3C/svg%3E';"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+          <span class="text-white text-lg">Rabbit</span>
+        </div>
+      </div>
+
+      <!-- Изображение 8: Squirrel -->
+      <div class="overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group relative">
+        <img
+          src="https://images.unsplash.com/photo-1615125965946-9a5ca7a488dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcXVpcnJlbCUyMHdpbGRsaWZlfGVufDF8fHx8MTc2ODExMzU4MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          alt="Squirrel"
+          class="w-full h-full object-cover group-hover:brightness-110 transition-all duration-300"
+          onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23ccc%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2210%22 text-anchor=%22middle%22 fill=%22%23999%22%3EN/A%3C/text%3E%3C/svg%3E';"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+          <span class="text-white text-lg">Squirrel</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-12 text-center">
+      <div class="inline-block bg-white/70 backdrop-blur-sm rounded-lg px-8 py-4 shadow-lg">
+        <p class="text-stone-700 italic">
+          "Каждое создание природы - произведение искусства"
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
