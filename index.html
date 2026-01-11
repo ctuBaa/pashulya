@@ -4,12 +4,61 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Коллекция таксидермии</title>
+  <!-- Подключаем Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
   <!-- Подключаем Tailwind CSS через CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Дополнительные стили, если нужно */
+    /* Дополнительные стили */
     .hover\\:scale-102:hover {
       transform: scale(1.02);
+    }
+    
+    /* Объемный шрифт для главного заголовка */
+    .volumetric-title {
+      font-family: 'Cinzel', serif;
+      background: linear-gradient(to bottom, #d4a574 0%, #8b6f47 50%, #5d4a2f 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 
+        2px 2px 0px rgba(139, 111, 71, 0.3),
+        4px 4px 0px rgba(93, 74, 47, 0.2),
+        6px 6px 8px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0 0 20px rgba(212, 165, 116, 0.3));
+      letter-spacing: 0.05em;
+      position: relative;
+    }
+    
+    /* Восстанавливаем тень для объемного заголовка */
+    .volumetric-title::before {
+      content: attr(data-text);
+      position: absolute;
+      left: 3px;
+      top: 3px;
+      z-index: -1;
+      color: rgba(139, 111, 71, 0.5);
+      text-shadow: none;
+    }
+    
+    /* Объемный шрифт для подзаголовка */
+    .volumetric-subtitle {
+      font-family: 'Playfair Display', serif;
+      text-shadow: 
+        1px 1px 0px rgba(120, 113, 108, 0.3),
+        2px 2px 0px rgba(87, 83, 78, 0.2),
+        3px 3px 5px rgba(0, 0, 0, 0.1);
+      letter-spacing: 0.03em;
+    }
+    
+    /* Объемный текст для цитаты */
+    .volumetric-quote {
+      font-family: 'Playfair Display', serif;
+      text-shadow: 
+        1px 1px 2px rgba(120, 113, 108, 0.4),
+        2px 2px 4px rgba(0, 0, 0, 0.1);
     }
   </style>
 </head>
@@ -17,9 +66,9 @@
   <div class="max-w-7xl mx-auto">
     <!-- Header -->
     <div class="text-center mb-12">
-      <h1 class="text-5xl mb-4 text-stone-800">Коллекция таксидермии</h1>
-      <p class="text-xl text-stone-600">Искусство сохранения природной красоты</p>
-      <div class="mt-4 w-32 h-1 bg-amber-600 mx-auto"></div>
+      <h1 class="text-6xl mb-6 volumetric-title" data-text="Коллекция таксидермии">Коллекция таксидермии</h1>
+      <p class="text-2xl text-stone-600 volumetric-subtitle">Искусство сохранения природной красоты</p>
+      <div class="mt-6 w-32 h-1 bg-gradient-to-r from-transparent via-amber-600 to-transparent mx-auto shadow-lg"></div>
     </div>
 
     <!-- Collage Grid -->
@@ -27,7 +76,7 @@
       <!-- Изображение 1: Deer (row-span-2) -->
       <div class="row-span-2 overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group relative">
         <img
-          src="https://images.unsplash.com/photo-1599456671475-da8c5b91e52c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWVyJTIwd2lsZGxpZmV8ZW58MXx8fHwxNzY4MDgwNjI1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          src="https://trophyart.ru/media/djcatalog2/images/item/3/olen-pyatnistyj-chuchelo-na-stenu_f.jpg"
           alt="Deer"
           class="w-full h-full object-cover group-hover:brightness-110 transition-all duration-300"
           onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23ccc%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2210%22 text-anchor=%22middle%22 fill=%22%23999%22%3EN/A%3C/text%3E%3C/svg%3E';"
@@ -40,7 +89,7 @@
       <!-- Изображение 2: Owl -->
       <div class="overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group relative">
         <img
-          src="https://images.unsplash.com/photo-1700054723240-032175a02f07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvd2wlMjBiaXJkfGVufDF8fHx8MTc2ODExMzU4MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          src="https://cs2.livemaster.ru/storage/aa/32/be85abcd13ff92904f542020a3mh--suveniry-i-podarki-neyasyt-dlinnohvostaya-sova-chuchelo-taksi.jpg"
           alt="Owl"
           class="w-full h-full object-cover group-hover:brightness-110 transition-all duration-300"
           onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23ccc%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2210%22 text-anchor=%22middle%22 fill=%22%23999%22%3EN/A%3C/text%3E%3C/svg%3E';"
@@ -53,7 +102,7 @@
       <!-- Изображение 3: Fox -->
       <div class="overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group relative">
         <img
-          src="https://images.unsplash.com/photo-1715430306822-6961509374e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb3glMjBhbmltYWx8ZW58MXx8fHwxNzY4MTEzNTgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          src="https://cs2.livemaster.ru/storage/5e/35/93f5092aa9dc2f2725e55dc39cfu--dlya-doma-i-interera-chuchelo-lisy.jpg"
           alt="Fox"
           class="w-full h-full object-cover group-hover:brightness-110 transition-all duration-300"
           onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23ccc%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2210%22 text-anchor=%22middle%22 fill=%22%23999%22%3EN/A%3C/text%3E%3C/svg%3E';"
@@ -66,7 +115,7 @@
       <!-- Изображение 4: Bear (col-span-2) -->
       <div class="col-span-2 overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group relative">
         <img
-          src="https://images.unsplash.com/photo-1661015799592-d9a4c1828b0e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWFyJTIwd2lsZGxpZmV8ZW58MXx8fHwxNzY4MDUwMjc4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          src="https://cs1.livemaster.ru/storage/22/b6/3c8b8d8ea7023942d9369e19dcz0--dlya-doma-i-interera-chuchelo-agressivnogo-medvedya.jpg"
           alt="Bear"
           class="w-full h-full object-cover group-hover:brightness-110 transition-all duration-300"
           onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23ccc%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2210%22 text-anchor=%22middle%22 fill=%22%23999%22%3EN/A%3C/text%3E%3C/svg%3E';"
@@ -79,7 +128,7 @@
       <!-- Изображение 5: Butterfly -->
       <div class="overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group relative">
         <img
-          src="https://images.unsplash.com/photo-1660244103972-156fe5854131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXR0ZXJmbHklMjBpbnNlY3R8ZW58MXx8fHwxNzY4MDUwMjgzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          src="https://i.pinimg.com/736x/e0/90/5a/e0905ab7bef4702d53a88871cb391698.jpg"
           alt="Butterfly"
           class="w-full h-full object-cover group-hover:brightness-110 transition-all duration-300"
           onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23ccc%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2210%22 text-anchor=%22middle%22 fill=%22%23999%22%3EN/A%3C/text%3E%3C/svg%3E';"
@@ -92,7 +141,7 @@
       <!-- Изображение 6: Eagle (row-span-2) -->
       <div class="row-span-2 overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group relative">
         <img
-          src="https://images.unsplash.com/photo-1637783038690-e4349f6981d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlYWdsZSUyMGJpcmR8ZW58MXx8fHwxNzY4MDUwMjc5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          src="https://i.pinimg.com/originals/31/86/95/3186956396eb6efe767f445d562af045.jpg"
           alt="Eagle"
           class="w-full h-full object-cover group-hover:brightness-110 transition-all duration-300"
           onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23ccc%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2210%22 text-anchor=%22middle%22 fill=%22%23999%22%3EN/A%3C/text%3E%3C/svg%3E';"
@@ -105,7 +154,7 @@
       <!-- Изображение 7: Rabbit -->
       <div class="overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group relative">
         <img
-          src="https://images.unsplash.com/photo-1552757166-a0d5c202e7cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyYWJiaXQlMjBhbmltYWx8ZW58MXx8fHwxNzY4MTEzNTgxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          src="https://школьная-лига.рф/upload/iblock/2ef/jpydqzrjiszu1umiqqdg15neuc2llxjm/pic_7e6e635a5d618e9_1024x3000.webp.jpg"
           alt="Rabbit"
           class="w-full h-full object-cover group-hover:brightness-110 transition-all duration-300"
           onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23ccc%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2210%22 text-anchor=%22middle%22 fill=%22%23999%22%3EN/A%3C/text%3E%3C/svg%3E';"
@@ -118,7 +167,7 @@
       <!-- Изображение 8: Squirrel -->
       <div class="overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group relative">
         <img
-          src="https://images.unsplash.com/photo-1615125965946-9a5ca7a488dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcXVpcnJlbCUyMHdpbGRsaWZlfGVufDF8fHx8MTc2ODExMzU4MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          src="https://images.satom.ru/i3/firms/28/171/171904/chuchelo-belki-s-shishkoy_a75e0bfd1267617_800x600.webp.jpg"
           alt="Squirrel"
           class="w-full h-full object-cover group-hover:brightness-110 transition-all duration-300"
           onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23ccc%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2210%22 text-anchor=%22middle%22 fill=%22%23999%22%3EN/A%3C/text%3E%3C/svg%3E';"
@@ -132,7 +181,7 @@
     <!-- Footer -->
     <div class="mt-12 text-center">
       <div class="inline-block bg-white/70 backdrop-blur-sm rounded-lg px-8 py-4 shadow-lg">
-        <p class="text-stone-700 italic">
+        <p class="text-stone-700 italic text-xl volumetric-quote">
           "Каждое создание природы - произведение искусства"
         </p>
       </div>
